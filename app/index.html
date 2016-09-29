@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="chineseApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chinese Learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <!-- build:css styles/main.css -->
+  <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" />
+  <link href="styles/github-light.css" rel="stylesheet" />
+  <link href="styles/normalize.css" rel="stylesheet" />
+  <link href="styles/modify.css" rel="stylesheet" />
+  <!-- endbuild -->
+</head>
+
+<body>
+
+  <div ui-view="header"></div>
+  <div ui-view="content"></div>
+  <div ui-view="footer"></div>
+
+  <!-- build:js scripts/main.js -->
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers.js"></script>
+  <script src="scripts/services.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>
