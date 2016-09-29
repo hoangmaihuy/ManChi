@@ -1,0 +1,23 @@
+{
+  "name": "chinese-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangmaihuy/chinese-learning.git"
+  },
+  "author": "hoangmaihuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoangmaihuy/chinese-learning/issues"
+  },
+  "homepage": "https://github.com/hoangmaihuy/chinese-learning#readme",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1"
+  }
+}
