@@ -54,18 +54,18 @@ gulp.task('copyfonts', function() {
     .pipe(gulp.dest('./dist/fonts'));
 });
 
- gulp.task('watch', ['serve'], function() {
-  gulp.watch(files, ['serve']);
+ gulp.task('watch', ['browser-sync'], function() {
+  gulp.watch('{app/scripts/**/*.js,app/styles/**/*.css,app/**/*.html}', ['usemin']);
 });
 
-gulp.task('serve', ['default'], function() {
+gulp.task('browser-sync', ['default'], function() {
   browserSync.init(files, {
     server: {
       baseDir: "dist",
       index: "index.html"
     }
   });
-  gulp.watch(files, ['serve', browserSync.reload]);
+  gulp.watch("dist/**/*").on('change', browserSync.reload);
 });
 
 gulp.task('usemin', ['jshint'], function() {
