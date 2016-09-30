@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('machiApp', ['ui.router', 'ngResource'])
+angular.module('manchiApp', ['ui.router', 'ngResource'])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('app', {
@@ -10,14 +10,35 @@ angular.module('machiApp', ['ui.router', 'ngResource'])
             templateUrl: 'views/header.html'
           },
           'content': {
-            templateUrl: 'views/home.html',
-            controller: "HomeController"
+            templateUrl: 'views/home.html'
           },
           'footer': {
             templateUrl: "views/footer.html"
           }
         }
-      });
+      })
+    .state('app.writing', {
+      url: 'writing',
+      views: {
+        'content@': {
+          templateUrl: 'views/writing/writing.html',
+          controller: "WritingController"
+        }
+      }
+    })
+    .state('app.writing.lesson', {
+      url: 'writing/lesson/:lessonId',
+      views: {
+        'content@': {
+          templateUrl: 'views/writing/lesson.html',
+          controller: "WritingLessonController"
+        }
+      }
+    })
+    .state('app.writing.lesson.question', {
+      url: 'writing/lesson/:lessonId/question/:questionId',
+      controller: "WritingQuestionController"
+    });
 
     $urlRouterProvider.otherwise('/');
   });

@@ -45,7 +45,7 @@ gulp.task('usemin', ['jshint'], function() {
 });
 
 gulp.task('copyviews', function() {
-  gulp.src('./app/views/*.html')
+  gulp.src('./app/views/**/*.html')
     .pipe(gulp.dest('./dist/views'));
 });
 
