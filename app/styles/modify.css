@@ -13,3 +13,7 @@
 th {
   text-align: center;
 }
+
+audio {
+  width: 100%;
+}

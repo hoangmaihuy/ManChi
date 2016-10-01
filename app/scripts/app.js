@@ -18,7 +18,7 @@ angular.module('manchiApp', ['ui.router', 'ngResource'])
         }
       })
     .state('app.writing', {
-      url: 'writing',
+      url: 'writing/',
       views: {
         'content@': {
           templateUrl: 'views/writing/writing.html',
@@ -27,7 +27,7 @@ angular.module('manchiApp', ['ui.router', 'ngResource'])
       }
     })
     .state('app.writing.lesson', {
-      url: 'writing/lesson/:lessonId',
+      url: 'lesson/:lessonId/',
       views: {
         'content@': {
           templateUrl: 'views/writing/lesson.html',
@@ -36,7 +36,7 @@ angular.module('manchiApp', ['ui.router', 'ngResource'])
       }
     })
     .state('app.writing.lesson.question', {
-      url: 'writing/lesson/:lessonId/question/:questionId',
+      url: 'question/:questionId/',
       controller: "WritingQuestionController"
     });
 

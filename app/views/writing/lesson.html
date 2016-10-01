@@ -1,7 +1,27 @@
-<div class="main-content" ng-controller="LessonController">
-  <h2>Lesson {{lessonId}}</h2>
-  <h3>{{lessonTopic}}</h3>
-  <table>
-    
+<div class="main-content" ng-controller="WritingLessonController">
+  <h2>Lesson {{lessonId}}: {{lessonTopic}}</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="col-md-1">#</th>
+        <th class="col-md-3">New Words</th>
+        <th class="col-md-3">Pīnyīn</th>
+        <th class="col-md-2">Audio</th>
+        <th class="col-md-3">Meaning</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="word in shengci">
+        <th class="col-md-1">{{$index+1}}</th>
+        <th class="col-md-3">{{word.hanzi}}</th>
+        <th class="col-md-3">{{word.pinyin}}</th>
+        <th class="col-md-2">
+          <audio controls>
+            <source ng-src="{{word.audio | trusted}}" type="audio/mpeg" />
+          </audio>
+        </th>
+        <th class="col-md-3">{{word.meaning}}</th>
+      </tr>
+    </tbody>
   </table>
 </div>

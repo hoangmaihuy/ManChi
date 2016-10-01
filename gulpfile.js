@@ -63,10 +63,21 @@ gulp.task('copydata', function() {
 });
 
 gulp.task('browser-sync', ['default'], function() {
+  var allowCrossDomain = function(req, res, next) {
+    res.addHeader('Access-Control-Allow-Origin', '*');
+    res.addHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.addHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+    next();
+}
   browserSync.init(files, {
     server: {
       baseDir: "dist",
-      index: "index.html"
+      index: "index.html",
+      middleware: function (req, res, next) {
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        next();
+      }
     }
   });
   gulp.watch("dist/**/*").on('change', browserSync.reload);
