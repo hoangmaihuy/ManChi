@@ -28,6 +28,9 @@ angular.module('manchiApp')
     this.getWriteWords = function(lessonIndex) {
       return lessons[lessonIndex].writeWords;
     }
+    this.getQuestion = function(lessonIndex, wordIndex) {
+      return lessons[lessonIndex].writeWords[wordIndex];
+    }
      this.getPinyin = function(word) {
       var pinyin = '';
       $http.get(pinyinAPI + word + '&format=json').success(function(data) {
@@ -36,7 +39,7 @@ angular.module('manchiApp')
       });
       console.log(pinyin);
       return pinyin;
-    } 
+    }
     this.translate = function(word) {
       var meaning = '';
       $http.get(translateAPI + word + '&source=zh-CN&target=en').success(function(data) {
