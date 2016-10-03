@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hoangmaihuy/chinese-learning#readme",
   "dependencies": {
+    "@google-cloud/translate": "^0.3.0",
     "bower": "^1.7.9",
     "browser-sync": "^2.16.0",
     "del": "^2.2.2",
@@ -34,12 +35,15 @@
     "gulp-uglify": "^2.0.0",
     "gulp-usemin": "^0.3.24",
     "jshint-stylish": "^2.2.1",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "promise": "^7.1.1",
+    "random-string": "^0.1.2"
   },
   "devDependencies": {
     "google-translate": "^1.0.6",
     "gulp-ng-annotate": "^2.0.0",
     "jshint": "^2.9.3",
-    "pinyin": "^2.8.0"
+    "pinyin": "^2.8.0",
+    "promise": "^7.1.1"
   }
 }

@@ -17,11 +17,12 @@
         <th class="col-md-3">{{word.pinyin}}</th>
         <th class="col-md-2">
           <audio controls>
-            <source ng-src="{{word.audio | trusted}}" type="audio/mpeg" />
+            <source ng-src="{{word.audio}}" type="audio/mpeg" />
           </audio>
         </th>
         <th class="col-md-3">{{word.meaning}}</th>
       </tr>
     </tbody>
   </table>
+  <a ui-sref="app.writing.lesson.question({lessonId: {{lessonId}}, questionId: 1})">Start writing</a>
 </div>

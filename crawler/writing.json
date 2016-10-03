@@ -1,1 +1,94 @@
-[{"topic":"Nǐ hǎo","newWords":[{"hanzi":"你","pinyin":"nǐ","audio":"","meaning":""},{"hanzi":"好","pinyin":"hǎo","audio":"","meaning":""},{"hanzi":"一","pinyin":"yī","audio":"","meaning":""},{"hanzi":"无","pinyin":"wú","audio":"","meaning":""}],"writingWords":[]},{"topic":"Hànyǔ bú tài nán","newWords":[{"hanzi":"忙","pinyin":"máng","audio":"","meaning":""},{"hanzi":"吗","pinyin":"má","audio":"","meaning":""},{"hanzi":"很","pinyin":"hěn","audio":"","meaning":""},{"hanzi":"汉语","pinyin":"hànyǔ","audio":"","meaning":""}],"writingWords":[]}]
+[{
+  "topic": "Nǐ hǎo",
+  "newWords": [{
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "audio": "./audio/ZWXdOMm3.mp3",
+    "meaning": "you"
+  }, {
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "audio": "./audio/ehEyP4yK.mp3",
+    "meaning": "it is good"
+  }, {
+    "hanzi": "一",
+    "pinyin": "yī",
+    "audio": "./audio/6tv9ATOI.mp3",
+    "meaning": "one"
+  }, {
+    "hanzi": "无",
+    "pinyin": "wú",
+    "audio": "./audio/GdsLQEKs.mp3",
+    "meaning": "no"
+  }],
+  "writeWords": [{
+    "hanzi": "一",
+    "pinyin": "yī",
+    "audio": "./audio/zHZfV8KN.mp3",
+    "meaning": "one"
+  }, {
+    "hanzi": "八",
+    "pinyin": "bā",
+    "audio": "./audio/nZ9Cuzd7.mp3",
+    "meaning": "Eight"
+  }, {
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "audio": "./audio/EQbja4iP.mp3",
+    "meaning": "Fives"
+  }, {
+    "hanzi": "不",
+    "pinyin": "bù",
+    "audio": "./audio/VsHYf4sl.mp3",
+    "meaning": "Do not"
+  }, {
+    "hanzi": "大",
+    "pinyin": "dà",
+    "audio": "./audio/3W6TpXp8.mp3",
+    "meaning": "Big"
+  }]
+}, {
+  "topic": "Hànyǔ bú tài nán",
+  "newWords": [{
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "audio": "./audio/h0icZEwp.mp3",
+    "meaning": "busy"
+  }, {
+    "hanzi": "吗",
+    "pinyin": "má",
+    "audio": "./audio/G0iZuHQh.mp3",
+    "meaning": "It"
+  }, {
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "audio": "./audio/yPEZ6OFx.mp3",
+    "meaning": "very"
+  }, {
+    "hanzi": "汉语",
+    "pinyin": "hànyǔ",
+    "audio": "./audio/0KecrQXj.mp3",
+    "meaning": "Chinese"
+  }],
+  "writeWords": [{
+    "hanzi": "太",
+    "pinyin": "tài",
+    "audio": "./audio/38QbaqXj.mp3",
+    "meaning": "too"
+  }, {
+    "hanzi": "汉",
+    "pinyin": "hàn",
+    "audio": "./audio/N1jDIvUD.mp3",
+    "meaning": "Chinese"
+  }, {
+    "hanzi": "语",
+    "pinyin": "yǔ",
+    "audio": "./audio/lmSZbwJT.mp3",
+    "meaning": "language"
+  }, {
+    "hanzi": "吗",
+    "pinyin": "má",
+    "audio": "./audio/Src8HSB8.mp3",
+    "meaning": "It"
+  }]
+}]
