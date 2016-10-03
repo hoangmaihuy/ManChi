@@ -1,0 +1,17 @@
+<div class="main-content" ng-controller="WritingQuestionController">
+  <h2>Lesson {{lessonId+1}}: {{lessonTopic}}</h2>
+  <h3>Word {{questionId+1}}/{{questionLength}}</h3>
+  <audio controls>
+    <source src="{{word.audio}}" />
+  </audio>
+  <form ng-submit="submitAns()">
+    <input type="text" ng-model="value" />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <p ng-show="accepted">
+    You're fucking right bro, congratulations!<br/>
+    <a ui-sref="app.writing.lesson.question({ lessonId: {{lessonId+1}}, questionId: {{questionId+2}} })">
+    Next question </a>
+  </p>
+</div>
