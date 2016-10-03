@@ -1,7 +1,7 @@
 {
-  "name": "chinese-learning",
+  "name": "ManChi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mandarin Chinese Writing and Speaking Assistant",
   "main": "index.js",
   "scripts": {
     "test": "gulp"
