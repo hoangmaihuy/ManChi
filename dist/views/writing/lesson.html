@@ -1,0 +1,31 @@
+<div class="main-content" ng-controller="WritingLessonController">
+  <h2>Lesson {{lessonId}}: {{lessonTopic}}</h2>
+  <h3>Revision</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="col-md-1">#</th>
+        <th class="col-md-3">New Words</th>
+        <th class="col-md-3">Pīnyīn</th>
+        <th class="col-md-2">Audio</th>
+        <th class="col-md-3">Meaning</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="word in shengci">
+        <th class="col-md-1">{{$index+1}}</th>
+        <th class="col-md-3">{{word.hanzi}}</th>
+        <th class="col-md-3">{{word.pinyin}}</th>
+        <th class="col-md-2">
+          <i class="fa fa-play-circle-o" ng-click="playAudio(word.audio)">
+          </i>
+        </th>
+        <th class="col-md-3">{{word.meaning}}</th>
+      </tr>
+    </tbody>
+  </table>
+  <div style="text-align: center">
+    <a ui-sref="app.writing.lesson.question({lessonId: {{lessonId}}, questionId: 1})">
+    <button type="button" class="btn btn-success">Start writing</button></a>
+  </div>
+</div>
