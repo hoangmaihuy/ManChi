@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoangmaihuy/chinese-learning.git"
+    "url": "git+https://github.com/hoangmaihuy/ManChi.git"
   },
   "author": "hoangmaihuy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hoangmaihuy/chinese-learning/issues"
+    "url": "https://github.com/hoangmaihuy/ManChi/issues"
   },
-  "homepage": "https://github.com/hoangmaihuy/chinese-learning#readme",
+  "homepage": "https://github.com/hoangmaihuy/ManChi#readme",
   "dependencies": {
     "@google-cloud/translate": "^0.3.0",
     "bower": "^1.7.9",
