@@ -15,7 +15,7 @@ a {
   a:hover {
     text-decoration: underline; }
 
-.btn {
+.header-btn {
   display: inline-block;
   margin-bottom: 1em;
   color: rgba(255, 255, 255, 0.7);
@@ -25,66 +25,67 @@ a {
   border-width: 1px;
   border-radius: 0.3em;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
-  .btn + .btn {
+  .header-btn + .header-btn {
     margin-left: 1em; }
 
-.btn:hover {
+.header-btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
 @media screen and (min-width: 64em) {
-  .btn {
+  .header-btn {
     padding: 0.75em 1em; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .btn {
+  .header-btn {
     padding: 0.6em 0.9em;
     font-size: 0.9em; } }
 
 @media screen and (max-width: 42em) {
-  .btn {
+  .header-btn {
     display: block;
     width: 100%;
     padding: 0.75em;
     font-size: 0.9em; }
-    .btn + .btn {
+    .header-btn + .header-btn {
       margin-top: 1em;
       margin-left: 0; } }
 
-.page-header {
+.own-page-header {
   color: #fff;
   text-align: center;
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957); }
 
 @media screen and (min-width: 64em) {
-  .page-header {
+  .own-page-header {
     padding: 5em 6em; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .page-header {
+  .own-page-header {
     padding: 3em 4em; } }
 
 @media screen and (max-width: 42em) {
-  .page-header {
+  .own-page-header {
     padding: 2em 1em; } }
 
-.project-name {
+.own-project-name {
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 0.1em; }
 
 @media screen and (min-width: 64em) {
-  .project-name {
+  .own-project-name {
     font-size: 3.25em; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .project-name {
+  .own-project-name {
     font-size: 2.25em; } }
 
 @media screen and (max-width: 42em) {
-  .project-name {
+  .own-project-name {
     font-size: 1.75em; } }
 
 .project-tagline {
