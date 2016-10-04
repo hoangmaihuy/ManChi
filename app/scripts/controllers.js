@@ -39,6 +39,8 @@ angular.module('manchiApp')
         if ($scope.value !== '') {
           if ($scope.value == $scope.word.hanzi) {
             $("#answer").addClass('has-success');
+            var success = new Audio('./audio/success.mp3');
+            success.play();
             $scope.accepted = true;
             console.log("Good game, well played!");
             setTimeout(function() {

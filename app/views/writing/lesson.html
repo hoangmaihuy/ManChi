@@ -1,5 +1,6 @@
 <div class="main-content" ng-controller="WritingLessonController">
   <h2>Lesson {{lessonId}}: {{lessonTopic}}</h2>
+  <h3>Revision</h3>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -23,5 +24,8 @@
       </tr>
     </tbody>
   </table>
-  <a ui-sref="app.writing.lesson.question({lessonId: {{lessonId}}, questionId: 1})">Start writing</a>
+  <div style="text-align: center">
+    <a ui-sref="app.writing.lesson.question({lessonId: {{lessonId}}, questionId: 1})">
+    <button type="button" class="btn btn-success">Start writing</button></a>
+  </div>
 </div>
