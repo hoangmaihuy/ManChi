@@ -20,6 +20,7 @@
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.1",
     "angular-resource": "^1.5.8",
-    "semantic": "semantic-ui#^2.2.4"
+    "semantic": "semantic-ui#^2.2.4",
+    "font-awesome": "fontawesome#^4.6.3"
   }
 }

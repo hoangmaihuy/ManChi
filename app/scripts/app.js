@@ -43,7 +43,16 @@ angular.module('manchiApp', ['ui.router', 'ngResource'])
             controller: "WritingQuestionController"
           }
         }
-      });
+      })
+      .state('app.writing.done', {
+        url: 'done/',
+        views: {
+          'content@': {
+            templateUrl: 'views/writing/done.html',
+            controller: "WritingDoneController"
+          }
+        }
+      })
 
     $urlRouterProvider.otherwise('/');
   });

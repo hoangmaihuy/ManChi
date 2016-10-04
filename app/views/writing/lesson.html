@@ -16,9 +16,8 @@
         <th class="col-md-3">{{word.hanzi}}</th>
         <th class="col-md-3">{{word.pinyin}}</th>
         <th class="col-md-2">
-          <audio controls>
-            <source ng-src="{{word.audio}}" type="audio/mpeg" />
-          </audio>
+          <i class="fa fa-play-circle-o" ng-click="playAudio(word.audio)">
+          </i>
         </th>
         <th class="col-md-3">{{word.meaning}}</th>
       </tr>
