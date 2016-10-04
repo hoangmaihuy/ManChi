@@ -3,247 +3,92 @@
   "newWords": [{
     "hanzi": "你",
     "pinyin": "nǐ",
-    "audio": "./audio/oG8lOom6.mp3",
+    "audio": "./audio/ZWXdOMm3.mp3",
     "meaning": "you"
   }, {
     "hanzi": "好",
     "pinyin": "hǎo",
-    "audio": "./audio/VipxrxsQ.mp3",
+    "audio": "./audio/ehEyP4yK.mp3",
     "meaning": "it is good"
-  }, {
-    "hanzi": "你好",
-    "pinyin": "nǐhǎo",
-    "audio": "./audio/GTibl9GJ.mp3",
-    "meaning": "hello there"
   }, {
     "hanzi": "一",
     "pinyin": "yī",
-    "audio": "./audio/QfhpOvji.mp3",
+    "audio": "./audio/6tv9ATOI.mp3",
     "meaning": "one"
   }, {
-    "hanzi": "五",
-    "pinyin": "wǔ",
-    "audio": "./audio/QuZkZZua.mp3",
-    "meaning": "fives"
-  }, {
-    "hanzi": "八",
-    "pinyin": "bā",
-    "audio": "./audio/yU3JTFvM.mp3",
-    "meaning": "eight"
-  }, {
-    "hanzi": "大",
-    "pinyin": "dà",
-    "audio": "./audio/y0jBYULu.mp3",
-    "meaning": "big"
-  }, {
-    "hanzi": "不",
-    "pinyin": "bù",
-    "audio": "./audio/GIcv49tt.mp3",
-    "meaning": "do not"
-  }, {
-    "hanzi": "口",
-    "pinyin": "kǒu",
-    "audio": "./audio/bAvHlVxm.mp3",
-    "meaning": "mouth"
-  }, {
-    "hanzi": "白",
-    "pinyin": "bái",
-    "audio": "./audio/rIsNvwaX.mp3",
-    "meaning": "white"
-  }, {
-    "hanzi": "女",
-    "pinyin": "nǚ",
-    "audio": "./audio/HB7Vj5As.mp3",
-    "meaning": "female"
-  }, {
-    "hanzi": "马",
-    "pinyin": "mǎ",
-    "audio": "./audio/zSr78uRj.mp3",
-    "meaning": "horse"
+    "hanzi": "无",
+    "pinyin": "wú",
+    "audio": "./audio/GdsLQEKs.mp3",
+    "meaning": "no"
   }],
   "writeWords": [{
     "hanzi": "一",
     "pinyin": "yī",
-    "audio": "./audio/v8SO0qwi.mp3",
+    "audio": "./audio/zHZfV8KN.mp3",
     "meaning": "one"
   }, {
     "hanzi": "八",
     "pinyin": "bā",
-    "audio": "./audio/BRLse58X.mp3",
-    "meaning": "eight"
+    "audio": "./audio/nZ9Cuzd7.mp3",
+    "meaning": "Eight"
   }, {
     "hanzi": "五",
     "pinyin": "wǔ",
-    "audio": "./audio/Vpz4F0GV.mp3",
-    "meaning": "fives"
+    "audio": "./audio/EQbja4iP.mp3",
+    "meaning": "Fives"
   }, {
     "hanzi": "不",
     "pinyin": "bù",
-    "audio": "./audio/VN2eSAfs.mp3",
-    "meaning": "do not"
+    "audio": "./audio/VsHYf4sl.mp3",
+    "meaning": "Do not"
   }, {
     "hanzi": "大",
     "pinyin": "dà",
-    "audio": "./audio/yQJPRCqD.mp3",
-    "meaning": "big"
-  }, {
-    "hanzi": "口",
-    "pinyin": "kǒu",
-    "audio": "./audio/ls5WOF6S.mp3",
-    "meaning": "mouth"
-  }, {
-    "hanzi": "白",
-    "pinyin": "bái",
-    "audio": "./audio/d56rnBIR.mp3",
-    "meaning": "white"
-  }, {
-    "hanzi": "女",
-    "pinyin": "nǚ",
-    "audio": "./audio/XbTeCEw4.mp3",
-    "meaning": "female"
-  }, {
-    "hanzi": "你",
-    "pinyin": "nǐ",
-    "audio": "./audio/5VlepOug.mp3",
-    "meaning": "you"
-  }, {
-    "hanzi": "好",
-    "pinyin": "hǎo",
-    "audio": "./audio/l9dTlWN0.mp3",
-    "meaning": "it is good"
-  }, {
-    "hanzi": "马",
-    "pinyin": "mǎ",
-    "audio": "./audio/a7LcL7Bb.mp3",
-    "meaning": "horse"
+    "audio": "./audio/3W6TpXp8.mp3",
+    "meaning": "Big"
   }]
 }, {
   "topic": "Hànyǔ bú tài nán",
   "newWords": [{
     "hanzi": "忙",
     "pinyin": "máng",
-    "audio": "./audio/fYqOSVhz.mp3",
+    "audio": "./audio/h0icZEwp.mp3",
     "meaning": "busy"
   }, {
     "hanzi": "吗",
     "pinyin": "má",
-    "audio": "./audio/Tg6zGHxG.mp3",
-    "meaning": "it"
+    "audio": "./audio/G0iZuHQh.mp3",
+    "meaning": "It"
   }, {
     "hanzi": "很",
     "pinyin": "hěn",
-    "audio": "./audio/vrVlXnQA.mp3",
+    "audio": "./audio/yPEZ6OFx.mp3",
     "meaning": "very"
   }, {
     "hanzi": "汉语",
     "pinyin": "hànyǔ",
-    "audio": "./audio/LFS2toWP.mp3",
-    "meaning": "chinese"
-  }, {
-    "hanzi": "难",
-    "pinyin": "nán",
-    "audio": "./audio/v0d8SVVQ.mp3",
-    "meaning": "difficult"
-  }, {
-    "hanzi": "太",
-    "pinyin": "tài",
-    "audio": "./audio/8F0ccMLS.mp3",
-    "meaning": "too"
-  }, {
-    "hanzi": "爸爸",
-    "pinyin": "bàbà",
-    "audio": "./audio/zZg278zK.mp3",
-    "meaning": "father"
-  }, {
-    "hanzi": "妈妈",
-    "pinyin": "māmā",
-    "audio": "./audio/XymjMsKM.mp3",
-    "meaning": "mom"
-  }, {
-    "hanzi": "他",
-    "pinyin": "tā",
-    "audio": "./audio/58fH4Zzc.mp3",
-    "meaning": "he"
-  }, {
-    "hanzi": "她",
-    "pinyin": "tā",
-    "audio": "./audio/2K7Uh8sp.mp3",
-    "meaning": "she was"
-  }, {
-    "hanzi": "男",
-    "pinyin": "nán",
-    "audio": "./audio/h7iTiXQ1.mp3",
-    "meaning": "male"
-  }, {
-    "hanzi": "哥哥",
-    "pinyin": "gēgē",
-    "audio": "./audio/ut0mhxF0.mp3",
-    "meaning": "brother"
-  }, {
-    "hanzi": "弟弟",
-    "pinyin": "dìdì",
-    "audio": "./audio/ySQPgFlu.mp3",
-    "meaning": "little brother"
-  }, {
-    "hanzi": "妹妹",
-    "pinyin": "mèimèi",
-    "audio": "./audio/n543Dq8t.mp3",
-    "meaning": "younger sister"
+    "audio": "./audio/0KecrQXj.mp3",
+    "meaning": "Chinese"
   }],
   "writeWords": [{
     "hanzi": "太",
     "pinyin": "tài",
-    "audio": "./audio/UsYrUCFR.mp3",
+    "audio": "./audio/38QbaqXj.mp3",
     "meaning": "too"
   }, {
     "hanzi": "汉",
     "pinyin": "hàn",
-    "audio": "./audio/kP13e7um.mp3",
-    "meaning": "chinese"
+    "audio": "./audio/N1jDIvUD.mp3",
+    "meaning": "Chinese"
   }, {
     "hanzi": "语",
     "pinyin": "yǔ",
-    "audio": "./audio/0kKI1Re3.mp3",
+    "audio": "./audio/lmSZbwJT.mp3",
     "meaning": "language"
   }, {
     "hanzi": "吗",
     "pinyin": "má",
-    "audio": "./audio/P8ntssJT.mp3",
-    "meaning": "it"
-  }, {
-    "hanzi": "妈",
-    "pinyin": "mā",
-    "audio": "./audio/qEuVdYNd.mp3",
-    "meaning": "mom"
-  }, {
-    "hanzi": "爸",
-    "pinyin": "bà",
-    "audio": "./audio/aNZ5EUAc.mp3",
-    "meaning": "dad"
-  }, {
-    "hanzi": "很",
-    "pinyin": "hěn",
-    "audio": "./audio/VfBsxzLl.mp3",
-    "meaning": "very"
-  }, {
-    "hanzi": "忙",
-    "pinyin": "máng",
-    "audio": "./audio/YebnF4HK.mp3",
-    "meaning": "busy"
-  }, {
-    "hanzi": "他",
-    "pinyin": "tā",
-    "audio": "./audio/I51k6R9B.mp3",
-    "meaning": "he"
-  }, {
-    "hanzi": "她",
-    "pinyin": "tā",
-    "audio": "./audio/yuWZBDOe.mp3",
-    "meaning": "she was"
-  }, {
-    "hanzi": "难",
-    "pinyin": "nán",
-    "audio": "./audio/6U0lv68P.mp3",
-    "meaning": "difficult"
+    "audio": "./audio/Src8HSB8.mp3",
+    "meaning": "It"
   }]
 }]
