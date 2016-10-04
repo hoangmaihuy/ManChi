@@ -43,7 +43,7 @@ function convert(word) {
   var p1 = new Promise(function(resolve, reject) {
     translator.translate(word, 'en', function(err, translation) {
       if (err) throw err;
-      newWord.meaning = translation;
+      newWord.meaning = translation.toLowerCase();
       console.log(translation);
       resolve();
     })
