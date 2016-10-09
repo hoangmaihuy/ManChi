@@ -34,6 +34,11 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
+.header-btn:visited {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
 @media screen and (min-width: 64em) {
   .header-btn {
     padding: 0.75em 1em; } }

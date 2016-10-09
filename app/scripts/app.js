@@ -53,6 +53,14 @@ angular.module('manchiApp', ['ui.router', 'ngResource'])
           }
         }
       })
+      .state('app.changelog', {
+        url: 'changelog/',
+        views: {
+          'content@': {
+            templateUrl: 'views/changelog.html'
+          }
+        }
+      })
 
     $urlRouterProvider.otherwise('/');
   });
