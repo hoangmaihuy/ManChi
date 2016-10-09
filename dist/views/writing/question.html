@@ -9,11 +9,31 @@
       </div>
     </div>
     <div id="answer" class="form-group">
-      <div class="col-md-4 col-md-offset-4 col-xs-7 col-xs-offset-2">
+      <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
         <input class="form-control input-lg" name="answer" placeholder="What did you hear?" ng-change="check()" type="textarea" ng-model="value" />
-        <span ng-show="accepted" id="helpSuccess" class="help-block">Good game, well played!</span>
-        <span ng-show="warning" id="helpWarning" class="help-block">Egrrrr!</span>
+        <span ng-show="accepted" id="helpSuccess" class="help-block">
+          <i class="fa fa-check pull-left"></i>
+          (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+        </span>
+        <span ng-show="warning" id="helpWarning" class="help-block"><i class="fa fa-close pull-left"></i>ಠ╭╮ಠ</span>
       </div>
     </div>
   </form>
-</div>
+  <div class="row">
+    <div class="alert alert-info col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2" role="alert" style="visibility: hidden">
+      <strong>Need help!?</strong> <a class="alert-link" ng-click="showHint = true">Click</a> to show hint.
+      <div ng-show="showHint">
+        The character is <strong>{{word.hanzi}}</strong>, pīnyīn is <i>{{word.pinyin}}</i> and meaning is <i>{{word.meaning}}</i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+        <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{progress}}%">
+            <span class="sr-only">{{progress}}% Complete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a ui-sref="app.writing"> <i class="fa fa-angle-double-left pull-left"></i>Back to Lesson </a>
+  </div>
