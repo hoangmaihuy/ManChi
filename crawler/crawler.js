@@ -6,6 +6,7 @@ var tts = require('./voice-rss-tts/index.js');
 var randomString = require('random-string');
 var readline = require('readline');
 var config, writing, translator, database;
+var lessonId;
 
 fs.readFile('./config.json', function(err, data) {
   if (err) throw err;
@@ -32,6 +33,7 @@ fs.readFile('./config.json', function(err, data) {
         output: process.stdout
       })
       rl.question('Which lesson do you want to add? ', function(answer) {
+        lessonId = answer;
         console.log("Now processing lesson ", answer);
         rl.close();
         createLesson(writing[answer - 1]).then(function(lesson) {
@@ -67,7 +69,7 @@ function convert(word) {
   var p1 = new Promise(function(resolve, reject) {
     translator.translate(word, 'en', function(err, translation) {
       if (err) throw err;
-      newWord.meaning = translation.toLowerCase();
+      newWord.meaning = translation;
       console.log(translation);
       resolve();
     })
@@ -85,7 +87,7 @@ function convert(word) {
       b64: false,
       callback: function(err, content) {
         if (err) throw err;
-        var filePath = './audio/' + randomString() + '.mp3';
+        var filePath = './audio/' + 'lesson_' + lessonId + '_' + randomString() + '.mp3';
         fs.writeFile(filePath, content, function(err) {
           if (err) throw err;
           console.log('Successfully save ' + word + ' to ' + filePath);
