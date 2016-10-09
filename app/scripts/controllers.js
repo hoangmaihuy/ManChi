@@ -27,6 +27,7 @@ angular.module('manchiApp')
       $scope.lessonId = lessonId;
       $scope.lessonTopic = writingFactory.getLesson(lessonId).topic;
       var questionId = $stateParams.questionId - 1;
+      $scope.showHint = false;
       $scope.value = '';
       $scope.questionId = questionId;
       $scope.word = writingFactory.getQuestion(lessonId, questionId);
@@ -34,13 +35,15 @@ angular.module('manchiApp')
       $scope.accepted = false;
       $scope.warning = false;
       $scope.checkAns = '';
-      console.log($scope.value.$pristine);
+      $scope.progress = Math.ceil(($scope.questionId+1)/($scope.questionLength)*100);
       $scope.check = function() {
         if ($scope.value !== '') {
           if ($scope.value == $scope.word.hanzi) {
             $("#answer").addClass('has-success');
             var success = new Audio('./audio/success.mp3');
             success.play();
+            $("#answer").removeClass('has-warning');
+            $scope.warning = false;
             $scope.accepted = true;
             console.log("Good game, well played!");
             setTimeout(function() {
@@ -66,6 +69,12 @@ angular.module('manchiApp')
         }
       }
 
+      $scope.$on('$viewContentLoaded', function() {
+        setTimeout(function() {
+        $('.alert').css('visibility', 'visible');
+          console.log('Timeout!');
+        }, 30000)
+      });
       $scope.playAudio = function(audioPath) {
         var audio = new Audio(audioPath);
         $('.fa-volume-up').addClass('playing');
