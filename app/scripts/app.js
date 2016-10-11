@@ -61,6 +61,14 @@ angular.module('manchiApp', ['ui.router', 'ngResource'])
           }
         }
       })
+      .state('app.resources', {
+        url: 'resources/',
+        views: {
+          'content@': {
+            templateUrl: 'views/resources.html'
+          }
+        }
+      })
 
     $urlRouterProvider.otherwise('/');
   });
