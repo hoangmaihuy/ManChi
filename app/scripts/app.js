@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('manchiApp', ['ui.router', 'ngResource'])
+angular.module('manchiApp', ['ui.router', 'ngResource', 'ui.bootstrap'])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('app', {
@@ -61,11 +61,11 @@ angular.module('manchiApp', ['ui.router', 'ngResource'])
           }
         }
       })
-      .state('app.resources', {
-        url: 'resources/',
+      .state('app.audiobook', {
+        url: 'audiobook/',
         views: {
           'content@': {
-            templateUrl: 'views/resources.html'
+            templateUrl: 'views/audiobook.html'
           }
         }
       })

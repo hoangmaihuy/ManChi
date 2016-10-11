@@ -21,6 +21,11 @@
     "angular-ui-router": "^0.3.1",
     "angular-resource": "^1.5.8",
     "semantic": "semantic-ui#^2.2.4",
-    "font-awesome": "fontawesome#^4.6.3"
+    "font-awesome": "fontawesome#^4.6.3",
+    "angular-sanitize": "^1.5.8",
+    "ui-bootstrap": "^2.2.0",
+    "angular-animate": "^1.5.8",
+    "angular-touch": "^1.5.8",
+    "angular-bootstrap": "^2.2.0"
   }
 }
