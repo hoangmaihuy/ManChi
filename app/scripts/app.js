@@ -65,7 +65,8 @@ angular.module('manchiApp', ['ui.router', 'ngResource', 'ui.bootstrap'])
         url: 'audiobook/',
         views: {
           'content@': {
-            templateUrl: 'views/audiobook.html'
+            templateUrl: 'views/audiobook.html',
+            controller: "AudiobookController"
           }
         }
       })

@@ -35,7 +35,7 @@ angular.module('manchiApp')
       $scope.accepted = false;
       $scope.warning = false;
       $scope.checkAns = '';
-      $scope.progress = Math.ceil(($scope.questionId+1)/($scope.questionLength)*100);
+      $scope.progress = Math.ceil(($scope.questionId + 1) / ($scope.questionLength) * 100);
       $scope.check = function() {
         if ($scope.value !== '') {
           if ($scope.value == $scope.word.hanzi) {
@@ -71,7 +71,7 @@ angular.module('manchiApp')
 
       $scope.$on('$viewContentLoaded', function() {
         setTimeout(function() {
-        $('.alert').css('visibility', 'visible');
+          $('.alert').css('visibility', 'visible');
           console.log('Timeout!');
         }, 30000)
       });
@@ -91,5 +91,11 @@ angular.module('manchiApp')
       $scope.lessonId = lessonId;
       //$scope.lessonTopic = writingFactory.getLesson(lessonId).topic;
 
+    }
+  ])
+  .controller('AudiobookController', ['$scope',
+    function($scope) {
+      $('audio').css('width','100');
+      $('img').css('margin-top', '0.5em');
     }
   ])
