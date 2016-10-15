@@ -58,6 +58,7 @@ gulp.task('copyfonts', function() {
 
 gulp.task('copydata', function() {
   gulp.src('crawler/audio/*.mp3').pipe(gulp.dest('./dist/audio'));
+  gulp.src('./success.mp3').pipe(gulp.dest('./dist/audio'));
   gulp.src('crawler/writing.json').pipe(gulp.dest('./dist/data'));
 })
 

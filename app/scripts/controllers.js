@@ -23,6 +23,7 @@ angular.module('manchiApp')
   ])
   .controller('WritingQuestionController', ['$scope', '$stateParams', '$state', 'writingFactory',
     function($scope, $stateParams, $state, writingFactory) {
+      $('audio').attr('playbackRate', '0.5');
       var lessonId = $stateParams.lessonId - 1;
       $scope.lessonId = lessonId;
       $scope.lessonTopic = writingFactory.getLesson(lessonId).topic;
