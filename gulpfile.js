@@ -26,7 +26,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('default', ['clean'], function() {
-  gulp.start('usemin', 'copyviews', 'copyfonts', 'copydata');
+  gulp.start('usemin', 'copyviews', 'copyfonts', 'copydata', 'imagemin');
 });
 
 gulp.task('jshint', function() {
@@ -94,4 +94,17 @@ gulp.task('usemin', ['jshint'], function() {
       js: [ngannotate(), uglify(), rev()]
     }))
     .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('imagemin', function() {
+  return del(['dist/images']), gulp.src('app/images/**/*')
+    .pipe(cache(imagemin({
+      optimizationLevel: 3,
+      progressive: true,
+      interlaced: true
+    })))
+    .pipe(gulp.dest('dist/images'))
+    .pipe(notify({
+      message: 'Images task complete'
+    }));
 });

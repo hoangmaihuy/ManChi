@@ -1,6 +1,13 @@
 'use strict';
 
-angular.module('manchiApp', ['ui.router', 'ngResource', 'ui.bootstrap'])
+angular.module('manchiApp', ['ui.router', 'ngResource', 'ui.bootstrap', 'ezfb'])
+  .config(function(ezfbProvider) {
+    ezfbProvider.setInitParams({
+      appId      : '659284600914573',
+      xfbml      : true,
+      version    : 'v2.8'
+    })
+  })
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('app', {
@@ -44,12 +51,12 @@ angular.module('manchiApp', ['ui.router', 'ngResource', 'ui.bootstrap'])
           }
         }
       })
-      .state('app.writing.done', {
-        url: 'done/',
+      .state('app.thankyou', {
+        url: 'thankyou/',
         views: {
           'content@': {
-            templateUrl: 'views/writing/done.html',
-            controller: "WritingDoneController"
+            templateUrl: 'views/thankyou.html',
+            controller: "ThankYouController"
           }
         }
       })
@@ -72,4 +79,4 @@ angular.module('manchiApp', ['ui.router', 'ngResource', 'ui.bootstrap'])
       })
 
     $urlRouterProvider.otherwise('/');
-  });
+  })

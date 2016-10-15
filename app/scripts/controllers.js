@@ -54,7 +54,7 @@ angular.module('manchiApp')
                   questionId: questionId + 2
                 });
               } else {
-                $state.go('app.writing.done', {
+                $state.go('app.thankyou', {
                   lessonId: lessonId + 1
                 })
               }
@@ -86,12 +86,8 @@ angular.module('manchiApp')
       }
     }
   ])
-  .controller('WritingDoneController', ['$scope', '$stateParams', 'writingFactory', '$state',
+  .controller('ThankYouController', ['$scope', '$stateParams', 'writingFactory', '$state',
     function($scope, $stateParams, $state, writingFactory) {
-      var lessonId = $stateParams.lessonId - 1;
-      $scope.lessonId = lessonId;
-      //$scope.lessonTopic = writingFactory.getLesson(lessonId).topic;
-
     }
   ])
   .controller('AudiobookController', ['$scope',
