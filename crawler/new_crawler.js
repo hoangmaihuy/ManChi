@@ -138,12 +138,13 @@ function getTTS(word) {
 }
 
 function convert(word) {
-  var newWord = {
+  var newWord;
+  newWord = {
     hanzi: word,
     pinyin: pinyin(word).join(' '),
     audio: '',
     meaning: ''
-  }
+  };
   return getMeaning({
     text: word,
     from: 'zh-CHS',
