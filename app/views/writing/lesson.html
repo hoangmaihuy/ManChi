@@ -13,14 +13,14 @@
     </thead>
     <tbody>
       <tr ng-repeat="word in shengci">
-        <th class="col-md-1">{{$index+1}}</th>
-        <th class="col-md-3">{{word.hanzi}}</th>
-        <th class="col-md-3">{{word.pinyin}}</th>
-        <th class="col-md-2">
+        <td class="col-md-1">{{$index+1}}</td>
+        <td class="col-md-3 hanzi">{{word.hanzi}}</td>
+        <td class="col-md-3 pinyin">{{word.pinyin}}</t>
+        <td class="col-md-2">
           <i class="fa fa-play-circle-o" ng-click="playAudio(word.audio)">
           </i>
-        </th>
-        <th class="col-md-3">{{word.meaning}}</th>
+        </td>
+        <td class="col-md-3 meaning">{{word.meaning}}</td>
       </tr>
     </tbody>
   </table>

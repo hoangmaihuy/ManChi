@@ -17,3 +17,21 @@ audio {
 .btn {
   font-size: 1.1em;
 }
+
+td {
+  text-align: center;
+}
+
+.hanzi {
+  font-family: "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+  font-size: 25px;
+  color: black;
+}
+
+.pinyin {
+  color: black;
+}
+
+.meaning {
+  font-family: "Times New Roman", Helvetica, serif;
+}
