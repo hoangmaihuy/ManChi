@@ -7,6 +7,9 @@ var randomString = require('random-string');
 var readline = require('readline');
 var MsTranslator = require('mstranslator');
 var Writing, Client, lessonId, newLesson, lesson, ttsAPIKey;
+var bookId = 2;
+var bookPath = './writing/hanyu_jiaocheng_' + bookId + '.json';
+var dataPath = './writing.json';
 
 openJSON('./config.json')
   .then(config => {
@@ -17,7 +20,7 @@ openJSON('./config.json')
       client_secret: config.translatorSecret
     }, true);
     ttsAPIKey = config.ttsAPIKey;
-    return openJSON('./writing/writing.json');
+    return openJSON(bookPath);
   })
   .then(writing => {
     console.log('Done parsing writing.json');
@@ -26,7 +29,7 @@ openJSON('./config.json')
   })
   .then(_lessonId => {
     console.log('Now processing lesson ' + _lessonId);
-    lessonId = _lessonId;
+    lessonId = _lessonId - (bookId-1)*15;
     lesson = Writing[lessonId - 1];
     newLesson = {
       topic: lesson.topic,
@@ -70,10 +73,10 @@ function writeFile(path, content) {
 }
 
 function writeData(newLesson) {
-  openJSON('./writing.json').then(database => {
+  openJSON(dataPath).then(database => {
     console.log('Opened database');
-    database[lessonId - 1] = newLesson;
-    writeFile('./writing.json', JSON.stringify(database)).then(path => {
+    database[lessonId - 1 + (bookId-1)*15] = newLesson;
+    writeFile(dataPath, JSON.stringify(database)).then(path => {
       console.log('Saved database successfully to ' + path);
     })
   })
@@ -154,7 +157,7 @@ function convert(word) {
     newWord.meaning = meaning;
     return getTTS(word);
   }).then(buffer => {
-    var audioPath = './audio/' + 'lesson_' + lessonId + '_' + randomString() + '.mp3';
+    var audioPath = './audio/' + 'lesson_' + (lessonId + (bookId-1)*15) + '_' + randomString() + '.mp3';
     return writeFile(audioPath, buffer);
   }).then(audioPath => {
     console.log('Saved audio of ' + word + ' to ' + audioPath + ' successfully');
